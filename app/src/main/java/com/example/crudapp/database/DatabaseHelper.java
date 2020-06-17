@@ -26,13 +26,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         // membuat note tabel
         db.execSQL(Berita.CREATE_TABLE);
 
-        // cobain ini dari tugas sebelah dudududududu biar keliatan diaksi apa sih ya
+        /** cobain ini dari tugas sebelah dudududududu biar keliatan diaksi apa sih ya
         String sql = "create table tbl_user (id integer promary key, nama text null, " + "username text null, password text null);";
         Log.d("Data", "onCreate : "+sql);
         db.execSQL(sql);
 
         sql = "INSERT INTO tbl_user (nama, username, password) " + "VALUES ('Andi Purnama', 'andi', '1234');";
         db.execSQL(sql);
+         */
     }
 
 

@@ -9,12 +9,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.crudapp.database.DatabaseHelper;
+import com.example.crudapp.database.DataHelper;
 
 public class RegisterActivity extends AppCompatActivity {
     EditText nama,username,password;
     Button btnBuatAkun, btnKembali;
-    DatabaseHelper dbHelper;
+    DataHelper dbHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +24,7 @@ public class RegisterActivity extends AppCompatActivity {
         nama = findViewById(R.id.editTextNama);
         username = findViewById(R.id.editTextUsername);
         password = findViewById(R.id.editTextPassword);
-        dbHelper = new DatabaseHelper(this);
+        dbHelper = new DataHelper(this);
         btnBuatAkun = findViewById(R.id.buttonCreateAkun);
         btnKembali = findViewById(R.id.buttonKembali);
 

@@ -11,20 +11,20 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.crudapp.database.DatabaseHelper;
+import com.example.crudapp.database.DataHelper;
 
 public class LoginActivity extends AppCompatActivity {
     protected Cursor cursor;
     EditText user, pass;
     Button btnRegistrasi, btnLogin;
-    DatabaseHelper dbHelper;
+    DataHelper dbHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        dbHelper = new DatabaseHelper(this);
+        dbHelper = new DataHelper(this);
         user = findViewById(R.id.edtUsername);
         pass = findViewById(R.id.edtPassword);
 

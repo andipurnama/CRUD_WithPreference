@@ -251,8 +251,5 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
-    // nitip nih dari project sebelah
-
 }
 // huaaaaaa pen main
